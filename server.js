@@ -62,3 +62,6 @@ require('./app/routes.js')(app, passport); // load our routes and pass in our ap
 app.listen(port);
 
 console.log('The magic happens on port ' + port);
+
+// uncomment this line
+require('./config/passport')(passport); // pass passport for configuration
