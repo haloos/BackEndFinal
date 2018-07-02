@@ -38,7 +38,7 @@ mongoose.connect(configDB.url); // connect to our database
 
 app.use(morgan('dev')); // log every request to the console
 
-app.use(cookieParsder()); // read cookies (needed for auth)
+app.use(cookieParser()); // read cookies (needed for auth)
 
 app.use(bodyParser()); //get information from html forms
 
